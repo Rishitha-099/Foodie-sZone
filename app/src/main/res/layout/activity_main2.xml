@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Restaurants List"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Crossroads"
+        android:textSize="20dp"
+        android:textColor="#E91E63"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Southern Spice"
+        android:textColor="#E91E63"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Tabla"
+        android:textColor="#E91E63"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="RR Durbar"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#E91E63"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Seven Days"
+        android:textSize="20dp"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+</LinearLayout>

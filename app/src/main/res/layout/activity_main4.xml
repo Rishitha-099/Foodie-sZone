@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="MENU"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Starters List:"
+                android:textSize="32dp"
+                android:textColor="#F44336"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Veg Frankie"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"/>
+            <Button
+                android:id="@+id/vegbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textColor="#C67803"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Veg Cutlet"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/cutletbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Crispy Corn"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/cornbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Veg Manchuria"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/manchuriabutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Egg Cutlet"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/eggbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Chicken Lollipop"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/lollibutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Chicken Manchuria"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/chickenbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Chicken Frankie"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/frankiebutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MainCourse List:"
+                android:textSize="32dp"
+                android:textColor="#F44336"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Veg Biryani"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/vegbiryanibutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Plain Meals"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/mealbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Paneer Curry"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/paneerbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Chicken Biryani"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/nvbiryanibutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Chicken Curry"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/ccurrybutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Chapathi"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/chapathibutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Desserts:"
+                android:textSize="32dp"
+                android:textColor="#F44336"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Choco Padding"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/chocobutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Gulab Jamun"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/gulabbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Kheer"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/kheerbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Soft Drinks"
+                android:textSize="32dp"
+                android:textColor="#F44336"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Thumsup"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/thumsupbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Mountain Dew"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/dewbutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Frooti"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/frootibutton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="add_to_list"
+                android:text="ADD"
+                android:textStyle="bold"
+                android:textColor="#C67803"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp">
+            <Button
+                android:onClick="PlaceOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Place Order"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#E91E63"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

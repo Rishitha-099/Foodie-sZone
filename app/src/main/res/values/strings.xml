@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">foodiezone</string>
+    <string name="frankie">Veg Frankie\nQty:2pcs\nPrice:₹50</string>
+    <string name="cutlet">Veg Cutlet\nQty:2pcs\nPrice:₹30</string>
+    <string name="corn">Crispy Corn\nPrice:₹40</string>
+    <string name="vmanchuria">Veg Manchuria\nPrice:₹40</string>
+    <string name="ecutlet">Egg Cutlet\n Qty:2pcs\nPrice:₹40</string>
+    <string name="clollipop">Chicken Lollipop\nPrice:₹100</string>
+    <string name="cmanchuria">Chicken Manchuria\nPrice:₹100</string>
+    <string name="cfrankie">Chicken Frankie\nQty:2pcs\nPrice:₹80</string>
+    <string name="vbiryani">Veg Biryani\nQty:2persons\nPrice:₹150</string>
+    <string name="paneer">Paneer Curry\nQty:2persons\nPrice:₹150</string>
+    <string name="meal">Plain Meals\nQty:1person\nPrice:₹120</string>
+    <string name="cbiryani">Chicken Biryani\nQty:2persons\nPrice:₹250</string>
+    <string name="ccurry">Chicken Curry\nQty:2pcs\nPrice:₹150</string>
+    <string name="chapathi">Chapathi\nQty:2pcs\nPrice:₹20</string>
+    <string name="gulab">Gulab Jamun\nQty:3pcs\nPrice:₹30</string>
+    <string name="kheer">Kheer\nPrice:₹50</string>
+    <string name="choco">Choco Pudding\nPrice:₹50</string>
+    <string name="thumsup">Thumsup\nQty:250ml\nPrice:₹30</string>
+    <string name="dew">Mountain Dew\nQty:250ml\nPrice:₹30</string>
+    <string name="frooti">Frooti\nQty:250ml\nPrice:₹30</string>
+    <string name="map_key" translatable="false">AIzaSyAtKvZHcby7XpUJjGnTwpz0BEPUNVHoq6s</string>
+    <string name="confir">Details Added Successfully!!</string>
+
+
+</resources>

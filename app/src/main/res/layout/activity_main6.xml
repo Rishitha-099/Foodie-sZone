@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity6">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:id="@+id/subutton"
+        android:text="click here to add "
+        android:textSize="25dp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"/>
+</LinearLayout>

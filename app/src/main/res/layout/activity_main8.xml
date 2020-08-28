@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="240dp"
+        android:gravity="center_horizontal"
+        android:text="@string/confir"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Thankyou for opting foodie's zone"
+        android:textSize="25dp"
+        android:textColor="#E91E63"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
